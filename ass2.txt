@@ -1,0 +1,30 @@
+package SringTest;
+
+import java.util.Scanner;
+
+public class SringTest{
+	public static void assign(String string1, String string2){
+		String s1,s2;
+		boolean same;
+		s1= string1;
+		s2= string2;
+		if(s1.equals(s2)){
+			same=true;
+		}else{
+			same=false;
+		}
+		System.out.println(same);
+	}
+	
+	public static void main(String[] args) {
+		
+		String string1,string2;
+		Scanner in= new Scanner(System.in);
+		System.out.println("enter the 1st string:");
+		string1=in.nextLine();
+		System.out.println("enter the 2nd string:");
+		string2=in.nextLine();
+		assign(string1,string2);
+	}
+
+}
